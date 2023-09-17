@@ -11,6 +11,7 @@ html, body {
     padding: 0;
     font-family: 'Rubik', sans-serif;
     background-color: #EEF0F4;
+    color: #432000;
 }
 
 .container {
@@ -48,6 +49,11 @@ button {
     font-family: 'Rubik', sans-serif;
 }
 
+button:hover {
+    background-color: #432000;
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -64,4 +70,39 @@ ul li {
     flex-grow: 1;
     text-align: center;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+ul li:hover {
+    background-color: #FFECC7;
+    cursor: pointer;
+}
+@media only screen and (max-width:1000px ) {
+  body {
+    min-height: 80vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .container{
+  max-width: 80%;
+  min-width: 80%;
+  }
+  img{
+    width: 300px;
+  }
+  input,button{
+    padding: 40px;
+    font-size: 45px;
+    margin: 15px 0;
+    border-radius: 16px;
+    
+  }
+  ul li{
+    font-size: 45px;
+    padding: 40px;
+    border-radius: 16px;
+  }
+ul{
+    gap: 20px;
+}
 }
