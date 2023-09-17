@@ -15,9 +15,10 @@ const addButtonEl = document.getElementById("add-button");
 const shoppingListEl = document.getElementById("shopping-list");
 
 onValue(shoppingListDb,(snapshot)=>{
-console.log(snapshot.val());
+let listArray=Object.values(snapshot.val())
+console.log(listArray);
 })
-console.log(List);
+
 
 addButtonEl.addEventListener("click", function () {
   let inputValue = inputFieldEl.value;
