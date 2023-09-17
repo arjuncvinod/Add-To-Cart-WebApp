@@ -15,12 +15,16 @@ const addButtonEl = document.getElementById("add-button");
 const shoppingListEl = document.getElementById("shopping-list");
 
 onValue(shoppingListDb,(snapshot)=>{
-let listArray=Object.values(snapshot.val())
+let listArray=Object.entries(snapshot.val())
 clearList()
+
 for(let i=0;i<listArray.length;i++){
-    console.log(listArray[i]);
+    let currentItem=listArray[i]
+    let currentItemId=currentItem[0]
+    let currentItemValue=currentItem[1]
+
     
-    appendList(listArray[i])
+    appendList(currentItem)
 }
 
 })
@@ -40,7 +44,12 @@ function clearList(){
  function clear(){
     inputFieldEl.value = "";
  }
- function appendList(itemName){
+ function appendList(item){
+    let itemId=item[0]
+    let itemValue=item[1]
 
-shoppingListEl.innerHTML += `<li>${itemName}</li>`;
+// shoppingListEl.innerHTML += `<li>${itemName}</li>`;
+let newEl= document.createElement("li")
+newEl.textContent=itemValue
+shoppingListEl.append(newEl)
  }
