@@ -1,3 +1,11 @@
+/*
+ADD TO CART BUTTON
+background-color: #432000;
+
+ITEM BUTTONS
+background-color: #FFECC7;
+*/
+
 html, body {
     margin: 0;
     padding: 0;
@@ -39,6 +47,7 @@ button {
     text-align: center;
     font-family: 'Rubik', sans-serif;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
