@@ -12,6 +12,7 @@ html, body {
     font-family: 'Rubik', sans-serif;
     background-color: #EEF0F4;
     color: #432000;
+    user-select: none;
 }
 
 .container {
@@ -75,34 +76,4 @@ ul li {
 ul li:hover {
     background-color: #FFECC7;
     cursor: pointer;
-}
-@media only screen and (max-width:1000px ) {
-  body {
-    min-height: 80vh;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-  }
-  .container{
-  max-width: 80%;
-  min-width: 80%;
-  }
-  img{
-    width: 300px;
-  }
-  input,button{
-    padding: 40px;
-    font-size: 45px;
-    margin: 15px 0;
-    border-radius: 16px;
-    
-  }
-  ul li{
-    font-size: 45px;
-    padding: 40px;
-    border-radius: 16px;
-  }
-ul{
-    gap: 20px;
-}
 }
