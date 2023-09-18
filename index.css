@@ -10,7 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
+    background-color: #2c2c2d;
     color: #432000;
     user-select: none;
 }
@@ -41,7 +41,7 @@ input {
 
 button {
     color: #FDFDFD;
-    background-color: #AC485A;
+    background-color: #c1314b;
     border: 0;
     padding: 15px;
     border-radius: 8px;
@@ -70,7 +70,8 @@ ul li {
     border-radius: 8px;
     flex-grow: 1;
     text-align: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    font-weight: semi-bold;
 }
 
 ul li:hover {
